@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+
+    <script type="module" src="/dist/index.js"></script>
+    <title>Snowpack Todo App</title>
+    <style>
+      #list {
+        list-style: none;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list"></ul>
+    <form id="new-task-form">
+      <input type="text" id="new-task-title" />
+      <button type="submit" id="add-button">Add</button>
+      <button type="button" id="remove-button">Remove</button>
+    </form>
+  </body>
+</html>
