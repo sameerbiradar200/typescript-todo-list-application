@@ -1,7 +1,11 @@
 {
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build"
+    "build": "snowpack build",
+
+  
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/uuid": "^10.0.0",
@@ -12,6 +16,7 @@
     "@snowpack/plugin-typescript": "^1.2.1",
     "@types/canvas-confetti": "^1.0.0",
     "@types/snowpack-env": "^2.3.3",
+    "gh-pages": "^6.1.1",
     "prettier": "^2.2.1",
     "snowpack": "^3.3.7",
     "typescript": "^4.2.4"
